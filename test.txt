@@ -1,0 +1,86 @@
+
+d:\Projects\test\BinaryResourceTest>dotnet --info 
+Пакет SDK для .NET Core (отражающий любой global.json):
+ Version:   3.0.100-preview7-012821
+ Commit:    6348f1068a
+
+Среда выполнения:
+ OS Name:     Windows
+ OS Version:  6.1.7601
+ OS Platform: Windows
+ RID:         win7-x64
+ Base Path:   C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\
+
+Host (useful for support):
+  Version: 3.0.0-preview7-27912-14
+  Commit:  4da6ee6450
+
+.NET Core SDKs installed:
+  2.1.507 [C:\Program Files\dotnet\sdk]
+  2.1.602 [C:\Program Files\dotnet\sdk]
+  2.1.700 [C:\Program Files\dotnet\sdk]
+  2.2.107 [C:\Program Files\dotnet\sdk]
+  3.0.100-preview7-012821 [C:\Program Files\dotnet\sdk]
+
+.NET Core runtimes installed:
+  Microsoft.AspNetCore.All 2.1.9 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
+  Microsoft.AspNetCore.All 2.1.11 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
+  Microsoft.AspNetCore.All 2.2.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
+  Microsoft.AspNetCore.App 2.1.9 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 2.1.11 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 2.2.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 3.0.0-preview7.19365.7 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 2.1.9 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 2.1.11 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 2.2.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 3.0.0-preview7-27912-14 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 3.0.0-preview7-27912-14 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+To install additional .NET Core runtimes or SDKs:
+  https://aka.ms/dotnet-download
+
+d:\Projects\test\BinaryResourceTest>del /F/Q BinaryResourceTest\obj 
+
+d:\Projects\test\BinaryResourceTest>dotnet build 
+Microsoft (R) Build Engine версии 16.3.0-preview-19329-01+d31fdbf01 для .NET Core
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Восстановление завершено в 102,73 ms для d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj.
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\Microsoft.Common.CurrentVersion.targets(3056,5): error : MSB3822: Non-string resources require the System.Resources.Extensions assembly at runtime, but it was not found in this project's references. [d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj]
+C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\Microsoft.Common.CurrentVersion.targets(3056,5): error : MSB3822: Non-string resources require the System.Resources.Extensions assembly at runtime, but it was not found in this project's references. [d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj]
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\Microsoft.Common.CurrentVersion.targets(3056,5): error : MSB3822: Non-string resources require the System.Resources.Extensions assembly at runtime, but it was not found in this project's references. [d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj]
+
+Ошибка сборки.
+
+C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\Microsoft.Common.CurrentVersion.targets(3056,5): error : MSB3822: Non-string resources require the System.Resources.Extensions assembly at runtime, but it was not found in this project's references. [d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj]
+C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\Microsoft.Common.CurrentVersion.targets(3056,5): error : MSB3822: Non-string resources require the System.Resources.Extensions assembly at runtime, but it was not found in this project's references. [d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj]
+C:\Program Files\dotnet\sdk\3.0.100-preview7-012821\Microsoft.Common.CurrentVersion.targets(3056,5): error : MSB3822: Non-string resources require the System.Resources.Extensions assembly at runtime, but it was not found in this project's references. [d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj]
+    Предупреждений: 0
+    Ошибок: 3
+
+Прошло времени 00:00:01.35
+
+d:\Projects\test\BinaryResourceTest>dotnet build 
+Microsoft (R) Build Engine версии 16.3.0-preview-19329-01+d31fdbf01 для .NET Core
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Восстановление завершено в 31,61 ms для d:\Projects\test\BinaryResourceTest\BinaryResourceTest\BinaryResourceTest.csproj.
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  BinaryResourceTest -> d:\Projects\test\BinaryResourceTest\BinaryResourceTest\bin\Debug\net46\BinaryResourceTest.exe
+  BinaryResourceTest -> d:\Projects\test\BinaryResourceTest\BinaryResourceTest\bin\Debug\net45\BinaryResourceTest.exe
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  BinaryResourceTest -> d:\Projects\test\BinaryResourceTest\BinaryResourceTest\bin\Debug\net40\BinaryResourceTest.exe
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.29
+
+d:\Projects\test\BinaryResourceTest>BinaryResourceTest\bin\Debug\net45\BinaryResourceTest.exe
+Resource1.hello = 
+Is null
